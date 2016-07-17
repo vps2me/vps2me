@@ -25,7 +25,7 @@ cd BaiduPCS
 make clean
 make
 make install
-pcs set --captcha_file=/var/www/html/captch.gif
+pcs set --captcha_file=/var/www/html/captcha.gif
 # 一些脚本
 cd ~
 wget --no-check-certificate https://raw.githubusercontent.com/vps2me/vps2me/master/pdup.sh
