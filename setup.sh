@@ -4,7 +4,8 @@ apt-get update
 apt-get upgrade -y
 
 # 安装screen pip3
-apt-get install python3-pip screen -y
+apt-get install python3-pip -y
+apt-get install screen -y
 apt-get update
 
 # ubuntu15.04或更高版本安装ffmpeg
@@ -36,7 +37,10 @@ chmod +x bdup.sh
 wget --no-check-certificate https://raw.githubusercontent.com/vps2me/vps2me/master/updir.sh
 chmod +x updir.sh
 # 下载bpcs-uploader
-apt-get install php5 php5-cli curl unzip php7 -y
+apt-get install php5 php5-cli -y
+apt-get install curl -y
+apt-get install unzip -y
+apt-get install php7 -y
 /etc/init.d/apache2 restart
 wget https://github.com/oott123/bpcs_uploader/zipball/master
 rm -rf /var/www/html/index.html
