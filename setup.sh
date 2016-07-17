@@ -40,7 +40,8 @@ chmod +x updir.sh
 apt-get install php5 php5-cli -y
 apt-get install curl -y
 apt-get install unzip -y
-apt-get install php7 -y
+apt-get install php -y
+apt-get install apache2 -y
 /etc/init.d/apache2 restart
 wget https://github.com/oott123/bpcs_uploader/zipball/master
 rm -rf /var/www/html/index.html
