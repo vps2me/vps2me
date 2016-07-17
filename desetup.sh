@@ -9,8 +9,8 @@ cd deluge-1.3.12
 python setup.py install --install-layout=deb
 cd ~
 deluged
-screen deluge-web
+screen -fa -d -m -S deluge-web deluge-web
 sed -i '/exit 0/d' /etc/rc.local
 echo "deluged" >> /etc/rc.local
-echo "screen deluge-web" >> /etc/rc.local
+echo "screen -fa -d -m -S deluge-web deluge-web" >> /etc/rc.local
 echo "exit 0" >> /etc/rc.local
